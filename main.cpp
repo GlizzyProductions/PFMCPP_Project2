@@ -16,13 +16,20 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
+
+ 1    int - integer, a whole number;
  
+ 2    float - floating point, decimal number, has suffix;
  
+ 3    bool - boolean, true or false;
  
+ 4    double - double floating point, larger decimal numbers, no suffix;
  
+ 5    char - character, a single letter;
  
+ 6    void - return nothing;
  
- 
+
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
