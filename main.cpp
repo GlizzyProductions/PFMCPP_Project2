@@ -19,13 +19,33 @@ video: Chapter 2 - Part 3
 
  1    int - integer, a whole number;
  
- 2    float - floating point, decimal number, has suffix;
+         int marathonDifficulty = 7;
+         int numOfRunners = 250;
+         int numOfMiles = 30;
  
- 3    bool - boolean, true or false;
+ 2    float - floating point, decimal number, has suffix;
+
+         float startTime = 0.01f;
+         float endTime = 1290.6f;
+         float totalHours = 21.5f;
+ 
+ 3    bool - boolean, true or false
+
+         bool isAdult = true;
+         bool isEarly = false;
+         bool isRegistered = true;
  
  4    double - double floating point, larger decimal numbers, no suffix;
+
+         double averageSpeed = 5.59;
+         double heartRate = 78.6;
+         double topSpeed = 7.43;
  
  5    char - character, a single letter;
+
+         char advancedRunner = 'a';
+         char intermediateRunner = 'm';
+         char beginnerRunner = 'b';
  
  6    void - return nothing;
  
@@ -93,23 +113,23 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 
 /*
- 2)
+ 2) float
  */
 
 /*
- 3)
+ 3) bool
  */
 
 /*
- 4)
+ 4) char
  */
 
 /*
- 5)
+ 5) double
  */
 
 /*
- 6)
+ 6) void
  */
 
 /*
