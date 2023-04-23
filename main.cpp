@@ -91,10 +91,41 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+    // int - integer, a whole number;
+ 
+         int marathonDifficulty = 7;
+         int numOfRunners = 250;
+         int numOfMiles = 30;
+ 
+    //float - floating point, decimal number, has suffix;
+
+         float startTime = 0.01f;
+         float endTime = 1290.6f;
+         float totalHours = 21.5f;
+ 
+    //bool - boolean, true or false
+
+         bool isAdult = true;
+         bool isEarly = false;
+         bool isRegistered = true;
+ 
+    //double - double floating point, larger decimal numbers, no suffix;
+
+         double averageSpeed = 5.59;
+         double heartRate = 78.6;
+         double topSpeed = 7.43;
+ 
+    //char - character, a single letter;
+
+         char advancedRunner = 'a';
+         char intermediateRunner = 'm';
+         char beginnerRunner = 'b';
+ 
+    //void - return nothing;
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, marathonDifficulty, numOfRunners, numOfMiles, startTime,endTime,totalHours, isAdult, isEarly, isRegistered, averageSpeed, heartRate, topSpeed, advancedRunner, totalHours, intermediateRunner, beginnerRunner); 
+    //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -109,27 +140,27 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 } 
 
 /*
- 1)
+ 1) 
  */
 
 /*
- 2) float
+ 2) 
  */
 
 /*
- 3) bool
+ 3)
  */
 
 /*
- 4) char
+ 4)
  */
 
 /*
- 5) double
+ 5)
  */
 
 /*
- 6) void
+ 6) 
  */
 
 /*
