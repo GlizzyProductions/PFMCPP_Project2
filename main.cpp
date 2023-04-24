@@ -167,7 +167,7 @@ int eatMeal(bool isHungry = true, bool hasFood = true)
 /*
 // 3)
 
-bool likelyToFail(bool plannedAccordingly = false, bool isCompetent = false, bool hasResources = False)
+bool planToFail(bool plannedAccordingly = false, bool isCompetent = false, bool hasResources = False)
 {
 
     ignoreUnused(plannedAccordingly, isCompetent, hasResources);
@@ -179,10 +179,10 @@ bool likelyToFail(bool plannedAccordingly = false, bool isCompetent = false, boo
 /*
 // 4)
 
-void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int availableSpace > 756)
+void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int spaceAvailable > 756)
 {
 
-    ignoreUnused(dollarsSaved, timeAvailable, availableSpace);
+    ignoreUnused(dollarsSaved, timeAvailable, spaceAvailable);
      
 };
 */
@@ -190,10 +190,10 @@ void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int avai
 /*
 // 5)
 
-int pokemonCollected()
+int pokemonCollected(int capturedPokemon = 14)
 {
 
-    ignoreUnused();
+    ignoreUnused(capturedPokemon);
     
     return {};
 
@@ -204,10 +204,10 @@ int pokemonCollected()
 /*
 // 6) 
 
-double raiseIncome()
+double raiseIncome(int xYearsAtJob > 1, bool improvedSkillset = true)
 {
 
-    ignoreUnused();
+    ignoreUnused(xYearsAtJob, improvedSkillset);
     
     return {};
 
@@ -218,11 +218,10 @@ double raiseIncome()
 /*
 // 7)
 
-void pourStrongDrink()
+void pourStrongDrink(bool repeatCustomer = true; bool unpaidTab = false, int tipAmount = 20)
 {
 
-
-    ignoreUnused();
+    ignoreUnused(repeatCustomer, unpaidTab, int tipAmount);
     
 };
 
@@ -231,10 +230,10 @@ void pourStrongDrink()
 /*
 // 8)
 
-void timeToFight()
+void timeToFight(int angerLevel > 8, int offenseLevel > 6)
 {
 
-    ignoreUnused();
+    ignoreUnused(angerLevel, offenseLevel);
     
 };
 
@@ -243,12 +242,10 @@ void timeToFight()
 /*
 // 9)
 
-void takeTheBus()
+void takeTheBus(int availableCash > 150, bool longTrip = false)
 {
 
-
-
-    ignoreUnused();
+    ignoreUnused(availableCash, longTrip);
     
 };
 
@@ -257,10 +254,10 @@ void takeTheBus()
 /*
 // 10)
 
-char courseGrade()
+char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
 {
 
-    ignoreUnused();
+    ignoreUnused(testScore, assignments, inClassWork);
     
     return {};
 
