@@ -142,10 +142,12 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 
 // 1)
  
-void takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel = 8.3)
+bool takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel = 8.3f)
 {
  
-     ignoreUnused(trashBinFull, weightOfBag, odorLevel);
+    ignoreUnused(trashBinFull, weightOfBag, odorLevel);
+
+    return {};
      
 }
  
@@ -159,7 +161,7 @@ int eatMeal(bool isHungry = true, bool hasFood = true)
 
     return {};
  
-};
+}
 
 
 // 3)
@@ -170,16 +172,20 @@ bool planToFail(bool plannedAccordingly = false, bool isCompetent = false, bool 
     ignoreUnused(plannedAccordingly, isCompetent, hasResources);
     
     return {};
-};
+}
 
 
-// 4)
+/* // 4)
 
-void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int spaceAvailable > 756)
+bool purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int spaceAvailable > 756)
 {
-
+    int dollarsSaved = 2000;
+    bool timeAvailable = true;
+    int spaceAvailable = 756;
+    
     ignoreUnused(dollarsSaved, timeAvailable, spaceAvailable);
-     
+
+    return {};
 };
 
 
@@ -209,31 +215,34 @@ double raiseIncome(int xYearsAtJob > 1, bool improvedSkillset = true)
 
 // 7)
 
-void pourStrongDrink(bool repeatCustomer = true; bool unpaidTab = false, int tipAmount = 20)
+int pourStrongDrink(bool repeatCustomer = true, bool unpaidTab = false, int tipAmount = 20)
 {
 
-    ignoreUnused(repeatCustomer, unpaidTab, int tipAmount);
-    
+    ignoreUnused(repeatCustomer, unpaidTab, tipAmount);
+
+    return {};
 };
 
 
 // 8)
 
-void timeToFight(int angerLevel > 8, int offenseLevel > 6)
+bool timeToFight(int angerLevel > 8, int offenseLevel > 6)
 {
 
     ignoreUnused(angerLevel, offenseLevel);
-    
+
+    return {};
 };
 
 
 // 9)
 
-void takeTheBus(int availableCash > 150, bool longTrip = false)
+int takeTheBus(int availableCash > 150, bool longTrip = false)
 {
 
     ignoreUnused(availableCash, longTrip);
     
+    return{};
 };
 
 
@@ -248,7 +257,7 @@ char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
 
 };
 
-
+*/
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -263,33 +272,34 @@ char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
  Wait for my code review.
  */
 
+
 int main()
 {
     //example of calling that function, storing the value, and passing it to ignoreUnused at the end of main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    takeOutTrash(true, 9, 8.7);
+    auto removeTrash = takeOutTrash(true, 9, 8.7f);
     //2)
     auto orderPizza = eatMeal(true, true);
     //3)
     auto rejectPlan = planToFail(false, true, false);
-    //4)
-    purchasePetDog(1800, false, 800);
+ /*     //4)
+    auto buyDog = purchasePetDog(1800, false, 800);
     //5)
     auto inventory = pokemonCollected(6);
     //6)
     auto payMicheal = raiseIncome(2, true);
     //7)
-    pourStrongDrink(true, true, 10);
+    auto alcoholLevel = pourStrongDrink(true, true, 10);
     //8)
-    timeToFight(10, 10);
+    auto loseCool = timeToFight(10, 10);
     //9)
-    takeTheBus(300, true);
+    auto cheapTravel = takeTheBus(300, true);
     //10)
     auto gradeInClass = courseGrade(80, 10, 113);
-    
-    ignoreUnused(carRented, takeOutTrash, orderPizza, rejectPlan, purchasePetDog, inventory, payMicheal, pourStrongDrink, timeToFight, takeTheBus, gradeInClass);
+   */ 
+    ignoreUnused(carRented, removeTrash, orderPizza, rejectPlan);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
