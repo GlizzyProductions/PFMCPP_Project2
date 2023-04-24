@@ -195,7 +195,6 @@ int pokemonCollected(int capturedPokemon = 14)
 };
  
 
-/*
 // 6) 
 
 double raiseIncome(int xYearsAtJob > 1, bool improvedSkillset = true)
@@ -207,9 +206,7 @@ double raiseIncome(int xYearsAtJob > 1, bool improvedSkillset = true)
 
 };
 
-*/
 
-/*
 // 7)
 
 void pourStrongDrink(bool repeatCustomer = true; bool unpaidTab = false, int tipAmount = 20)
@@ -219,9 +216,7 @@ void pourStrongDrink(bool repeatCustomer = true; bool unpaidTab = false, int tip
     
 };
 
-*/
 
-/*
 // 8)
 
 void timeToFight(int angerLevel > 8, int offenseLevel > 6)
@@ -231,9 +226,7 @@ void timeToFight(int angerLevel > 8, int offenseLevel > 6)
     
 };
 
-*/
 
-/*
 // 9)
 
 void takeTheBus(int availableCash > 150, bool longTrip = false)
@@ -243,9 +236,7 @@ void takeTheBus(int availableCash > 150, bool longTrip = false)
     
 };
 
-*/
 
-/*
 // 10)
 
 char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
@@ -257,7 +248,6 @@ char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
 
 };
 
- */
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -289,17 +279,17 @@ int main()
     //5)
     auto inventory = pokemonCollected(6);
     //6)
-    
+    auto payMicheal = raiseIncome(2, true);
     //7)
-    
+    pourStrongDrink(true, true, 10);
     //8)
-    
+    timeToFight(10, 10);
     //9)
-    
+    takeTheBus(300, true);
     //10)
+    auto gradeInClass = courseGrade(80, 10, 113);
     
-    
-    ignoreUnused(carRented, takeOutTrash, orderPizza, rejectPlan, purchasePetDog, inventory,);
+    ignoreUnused(carRented, takeOutTrash, orderPizza, rejectPlan, purchasePetDog, inventory, payMicheal, pourStrongDrink, timeToFight, takeTheBus, gradeInClass);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
