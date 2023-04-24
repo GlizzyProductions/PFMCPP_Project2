@@ -140,43 +140,132 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 } 
 
 /*
- 1) 
- */
+// 1)
+ 
+void takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel = 8.3)
+{
+ 
+     ignoreUnused(trashBinFull, weightOfBag, odorLevel);
+     
+}
+ 
+*/
 
 /*
- 2) 
- */
+// 2) 
+
+int eatMeal(bool isHungry = true, bool hasFood = true)
+{
+
+    ignoreUnused(isHungry, hasFood);
+
+    return {};
+ 
+};
+*/
 
 /*
- 3)
- */
+// 3)
+
+bool likelyToFail(bool plannedAccordingly = false, bool isCompetent = false, bool hasResources = False)
+{
+
+    ignoreUnused(plannedAccordingly, isCompetent, hasResources);
+    
+    return {};
+};
+*/
 
 /*
- 4)
- */
+// 4)
+
+void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int availableSpace > 756)
+{
+
+    ignoreUnused(dollarsSaved, timeAvailable, availableSpace);
+     
+};
+*/
 
 /*
- 5)
- */
+// 5)
+
+int pokemonCollected()
+{
+
+    ignoreUnused();
+    
+    return {};
+
+};
+ 
+*/
 
 /*
- 6) 
- */
+// 6) 
+
+double raiseIncome()
+{
+
+    ignoreUnused();
+    
+    return {};
+
+};
+
+*/
 
 /*
- 7)
- */
+// 7)
+
+void pourStrongDrink()
+{
+
+
+    ignoreUnused();
+    
+};
+
+*/
 
 /*
- 8)
- */
+// 8)
+
+void timeToFight()
+{
+
+    ignoreUnused();
+    
+};
+
+*/
 
 /*
- 9)
- */
+// 9)
+
+void takeTheBus()
+{
+
+
+
+    ignoreUnused();
+    
+};
+
+*/
 
 /*
- 10)
+// 10)
+
+char courseGrade()
+{
+
+    ignoreUnused();
+    
+    return {};
+
+};
+
  */
 
 /*
