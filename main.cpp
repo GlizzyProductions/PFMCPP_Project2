@@ -139,7 +139,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     return {}; //if your function returns something other than void, add 'return {};' at the end of it.
 } 
 
-/*
+
 // 1)
  
 void takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel = 8.3)
@@ -149,7 +149,7 @@ void takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel
      
 }
  
-*/
+
 
 /*
 // 2) 
@@ -285,7 +285,7 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    takeOutTrash(true, 9, 8.7)
     //2)
     
     //3)
@@ -305,7 +305,7 @@ int main()
     //10)
     
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, takeOutTrash);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
