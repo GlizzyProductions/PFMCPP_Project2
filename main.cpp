@@ -150,8 +150,6 @@ void takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel
 }
  
 
-
-/*
 // 2) 
 
 int eatMeal(bool isHungry = true, bool hasFood = true)
@@ -162,21 +160,19 @@ int eatMeal(bool isHungry = true, bool hasFood = true)
     return {};
  
 };
-*/
 
-/*
+
 // 3)
 
-bool planToFail(bool plannedAccordingly = false, bool isCompetent = false, bool hasResources = False)
+bool planToFail(bool plannedAccordingly = false, bool isCompetent = false, bool hasResources = false)
 {
 
     ignoreUnused(plannedAccordingly, isCompetent, hasResources);
     
     return {};
 };
-*/
 
-/*
+
 // 4)
 
 void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int spaceAvailable > 756)
@@ -185,9 +181,8 @@ void purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int spac
     ignoreUnused(dollarsSaved, timeAvailable, spaceAvailable);
      
 };
-*/
 
-/*
+
 // 5)
 
 int pokemonCollected(int capturedPokemon = 14)
@@ -199,7 +194,6 @@ int pokemonCollected(int capturedPokemon = 14)
 
 };
  
-*/
 
 /*
 // 6) 
@@ -285,15 +279,15 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    takeOutTrash(true, 9, 8.7)
+    takeOutTrash(true, 9, 8.7);
     //2)
-    
+    auto orderPizza = eatMeal(true, true);
     //3)
-    
+    auto rejectPlan = planToFail(false, true, false);
     //4)
-    
+    purchasePetDog(1800, false, 800);
     //5)
-    
+    auto inventory = pokemonCollected(6);
     //6)
     
     //7)
@@ -305,7 +299,7 @@ int main()
     //10)
     
     
-    ignoreUnused(carRented, takeOutTrash);
+    ignoreUnused(carRented, takeOutTrash, orderPizza, rejectPlan, purchasePetDog, inventory,);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
