@@ -175,21 +175,18 @@ bool planToFail(bool plannedAccordingly = false, bool isCompetent = false, bool 
 }
 
 
-/* // 4)
+// 4)
 
-bool purchasePetDog(int dollarsSaved > 2000, bool timeAvailable = true, int spaceAvailable > 756)
+bool purchasePetDog(int dollarsSaved = 2000, bool timeAvailable = true, int spaceAvailable = 756)
 {
-    int dollarsSaved = 2000;
-    bool timeAvailable = true;
-    int spaceAvailable = 756;
     
     ignoreUnused(dollarsSaved, timeAvailable, spaceAvailable);
 
     return {};
-};
+}
 
 
-// 5)
+ // 5)
 
 int pokemonCollected(int capturedPokemon = 14)
 {
@@ -198,19 +195,19 @@ int pokemonCollected(int capturedPokemon = 14)
     
     return {};
 
-};
+}
  
 
 // 6) 
 
-double raiseIncome(int xYearsAtJob > 1, bool improvedSkillset = true)
+double raiseIncome(int xYearsAtJob = 1, bool improvedSkillset = true)
 {
 
     ignoreUnused(xYearsAtJob, improvedSkillset);
     
     return {};
 
-};
+}
 
 
 // 7)
@@ -221,29 +218,29 @@ int pourStrongDrink(bool repeatCustomer = true, bool unpaidTab = false, int tipA
     ignoreUnused(repeatCustomer, unpaidTab, tipAmount);
 
     return {};
-};
+}
 
 
 // 8)
 
-bool timeToFight(int angerLevel > 8, int offenseLevel > 6)
+bool timeToFight(int angerLevel = 8, int offenseLevel = 6)
 {
 
     ignoreUnused(angerLevel, offenseLevel);
 
     return {};
-};
+}
 
 
 // 9)
 
-int takeTheBus(int availableCash > 150, bool longTrip = false)
+int takeTheBus(int availableCash = 150, bool longTrip = false)
 {
 
     ignoreUnused(availableCash, longTrip);
     
     return{};
-};
+}
 
 
 // 10)
@@ -255,9 +252,9 @@ char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
     
     return {};
 
-};
+}
 
-*/
+
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -284,7 +281,7 @@ int main()
     auto orderPizza = eatMeal(true, true);
     //3)
     auto rejectPlan = planToFail(false, true, false);
- /*     //4)
+     //4)
     auto buyDog = purchasePetDog(1800, false, 800);
     //5)
     auto inventory = pokemonCollected(6);
@@ -298,8 +295,8 @@ int main()
     auto cheapTravel = takeTheBus(300, true);
     //10)
     auto gradeInClass = courseGrade(80, 10, 113);
-   */ 
-    ignoreUnused(carRented, removeTrash, orderPizza, rejectPlan);
+    
+    ignoreUnused(carRented, removeTrash, orderPizza, rejectPlan, buyDog, inventory, payMicheal, alcoholLevel, loseCool, cheapTravel, gradeInClass);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
