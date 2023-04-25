@@ -13,44 +13,29 @@ video: Chapter 2 - Part 3
  Purpose:  This project will teach you how to declare variables and free functions.  
  This will be the first project where the code you write will be compiled and you will be responsible for making sure it compiles before submitting it for review.
  
- 
  1) Write down the names of the 6 major primitive types available in C++  here:
  
-
- 1    int - integer, a whole number;
- 
-         int marathonDifficulty = 7;
-         int numOfRunners = 250;
-         int numOfMiles = 30;
- 
- 2    float - floating point, decimal number, has suffix;
-
-         float startTime = 0.01f;
-         float endTime = 1290.6f;
-         float totalHours = 21.5f;
- 
- 3    bool - boolean, true or false
-
-         bool isAdult = true;
-         bool isEarly = false;
-         bool isRegistered = true;
- 
- 4    double - double floating point, larger decimal numbers, no suffix;
-
-         double averageSpeed = 5.59;
-         double heartRate = 78.6;
-         double topSpeed = 7.43;
- 
- 5    char - character, a single letter;
-
-         char advancedRunner = 'a';
-         char intermediateRunner = 'm';
-         char beginnerRunner = 'b';
- 
- 6    void - return nothing;
- 
-
- 
+    1. int - integer, a whole number;
+       int marathonDifficulty = 7;
+       int numOfRunners = 250;
+       int numOfMiles = 30;
+    2. float - floating point, decimal number, has suffix;
+       float startTime = 0.01f;
+       float endTime = 1290.6f;
+       float totalHours = 21.5f;
+    3. bool - boolean, true or false
+       bool isAdult = true;
+       bool isEarly = false;
+       bool isRegistered = true;
+    4. double - double floating point, larger decimal numbers, no suffix;
+       double averageSpeed = 5.59;
+       double heartRate = 78.6;
+       double topSpeed = 7.43;
+    5. char - character, a single letter;
+       char advancedRunner = 'a';
+       char intermediateRunner = 'm';
+       char beginnerRunner = 'b';
+    6. void - return nothing;
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -92,37 +77,26 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     // int - integer, a whole number;
- 
-         int marathonDifficulty = 7;
-         int numOfRunners = 250;
-         int numOfMiles = 30;
- 
+    int marathonDifficulty = 7;
+    int numOfRunners = 250;
+    int numOfMiles = 30;
     //float - floating point, decimal number, has suffix;
-
-         float startTime = 0.01f;
-         float endTime = 1290.6f;
-         float totalHours = 21.5f;
- 
+    float startTime = 0.01f;
+    float endTime = 1290.6f;
+    float totalHours = 21.5f;
     //bool - boolean, true or false
-
-         bool isAdult = true;
-         bool isEarly = false;
-         bool isRegistered = true;
- 
+    bool isAdult = true;
+    bool isEarly = false;
+    bool isRegistered = true;
     //double - double floating point, larger decimal numbers, no suffix;
-
-         double averageSpeed = 5.59;
-         double heartRate = 78.6;
-         double topSpeed = 7.43;
- 
+    double averageSpeed = 5.59;
+    double heartRate = 78.6;
+    double topSpeed = 7.43;
     //char - character, a single letter;
-
-         char advancedRunner = 'a';
-         char intermediateRunner = 'm';
-         char beginnerRunner = 'b';
- 
-    //void - return nothing;
-
+    char advancedRunner = 'a';
+    char intermediateRunner = 'm';
+    char beginnerRunner = 'b';
+    //void - return nothing; 
     
     ignoreUnused(number, marathonDifficulty, numOfRunners, numOfMiles, startTime,endTime,totalHours, isAdult, isEarly, isRegistered, averageSpeed, heartRate, topSpeed, advancedRunner, totalHours, intermediateRunner, beginnerRunner); 
     //passing each variable declared to the ignoreUnused() function
@@ -139,122 +113,75 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     return {}; //if your function returns something other than void, add 'return {};' at the end of it.
 } 
 
-
-// 1)
- 
+// 1) 
 bool takeOutTrash(bool trashBinFull = true, int weightOfBag = 5, float odorLevel = 8.3f)
 {
- 
     ignoreUnused(trashBinFull, weightOfBag, odorLevel);
-
     return {};
-     
 }
- 
 
 // 2) 
-
 int eatMeal(bool isHungry = true, bool hasFood = true)
 {
-
     ignoreUnused(isHungry, hasFood);
-
     return {};
- 
 }
-
 
 // 3)
-
 bool planToFail(bool plannedAccordingly = false, bool isCompetent = false, bool hasResources = false)
 {
-
     ignoreUnused(plannedAccordingly, isCompetent, hasResources);
-    
     return {};
 }
-
 
 // 4)
-
 bool purchasePetDog(int dollarsSaved = 2000, bool timeAvailable = true, int spaceAvailable = 756)
 {
-    
     ignoreUnused(dollarsSaved, timeAvailable, spaceAvailable);
-
     return {};
 }
-
 
  // 5)
-
 int pokemonCollected(int capturedPokemon = 14)
 {
-
-    ignoreUnused(capturedPokemon);
-    
+    ignoreUnused(capturedPokemon); 
     return {};
-
 }
  
-
 // 6) 
-
 double raiseIncome(int xYearsAtJob = 1, bool improvedSkillset = true)
 {
-
     ignoreUnused(xYearsAtJob, improvedSkillset);
-    
     return {};
-
 }
-
 
 // 7)
-
 int pourStrongDrink(bool repeatCustomer = true, bool unpaidTab = false, int tipAmount = 20)
 {
-
     ignoreUnused(repeatCustomer, unpaidTab, tipAmount);
-
     return {};
 }
-
 
 // 8)
-
 bool timeToFight(int angerLevel = 8, int offenseLevel = 6)
 {
-
     ignoreUnused(angerLevel, offenseLevel);
-
     return {};
 }
 
-
 // 9)
-
 int takeTheBus(int availableCash = 150, bool longTrip = false)
 {
-
-    ignoreUnused(availableCash, longTrip);
-    
+    ignoreUnused(availableCash, longTrip);  
     return{};
 }
 
-
 // 10)
-
 char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
 {
-
-    ignoreUnused(testScore, assignments, inClassWork);
-    
+    ignoreUnused(testScore, assignments, inClassWork);   
     return {};
-
 }
-
-
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -281,7 +208,7 @@ int main()
     auto orderPizza = eatMeal(true, true);
     //3)
     auto rejectPlan = planToFail(false, true, false);
-     //4)
+    //4)
     auto buyDog = purchasePetDog(1800, false, 800);
     //5)
     auto inventory = pokemonCollected(6);
