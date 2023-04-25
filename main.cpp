@@ -69,7 +69,7 @@ video: Chapter 2 - Part 3
     see main() for an example of this.
  
 10) click the [run] button.  Clear up any errors or warnings as best you can.
- */
+*/
 
 //2)
 void variableDeclarations()
@@ -106,7 +106,7 @@ void variableDeclarations()
  10 functions
  example:
  note: this example shows the result after completing steps 3-8
- */
+*/
 bool rentACar(int rentalDuration, int carType = 0)  //function declaration with random number of arguments, arbitrary number of arguments have default value
 { 
     ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused() function
@@ -183,15 +183,15 @@ char courseGrade(int testScore = 0, int assignments = 0, int inClassWork = 0)
     return {};
 }
 /*
- MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
+MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
- Commit your changes by clicking on the Source Control panel on the left, entering a message, and click [Commit and push].
+Commit your changes by clicking on the Source Control panel on the left, entering a message, and click [Commit and push].
  
  If you didn't already: 
     Make a pull request after you make your first commit
     pin the pull request link and this repl.it link to our DM thread in a single message.
 
- send me a DM to review your pull request when the project is ready for review.
+send me a DM to review your pull request when the project is ready for review.
 
  Wait for my code review.
  */
@@ -201,7 +201,6 @@ int main()
 {
     //example of calling that function, storing the value, and passing it to ignoreUnused at the end of main()
     auto carRented = rentACar(6, 2); 
-    
     //1)
     auto removeTrash = takeOutTrash(true, 9, 8.7f);
     //2)
